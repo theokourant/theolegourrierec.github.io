@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    background-color: rgb(4, 1, 24);
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Outfit;
+    color: rgb(241, 241, 241);
+    scroll-behavior: smooth;
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+}
+
+.soulignage {
+    margin: 0 auto;
+    height: 5px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: rgb(32, 15, 147);
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Nav bar */
+
+.accueil_nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 15px;
+    width: 90%;
+    font-size: 18px;
+}
+
+/* --- */
+
+.accueil_nav_logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.accueil_nav_logo img {
+    width: 20%;
+}
+
+.accueil_nav_logo h1 {
+    margin-left: 25px;
+}
+
+/* --- */
+
+.accueil_nav_links ul {
+    display: flex;
+}
+
+.accueil_nav_links ul li {
+    list-style: none;
+}
+
+.accueil_nav_links ul li a {
+    text-decoration: none;
+    color: rgb(241, 241, 241);
+    margin-left: 50px;
+}
+
+
+
+.accueil_nav_links ul li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    border-radius: 25px;
+    background-color: rgb(209, 209, 209);
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+}
+
+.accueil_nav_links ul li:hover::after {
+    transform: scaleX(1);
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Page d'accueil */
+
+.accueil_minibio {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accueil_minibio img {
+    height: 252px;
+    width: 252px;
+}
+
+.accueil_minibio_text {
+    margin-left: 100px;
+    color: rgb(209, 209, 209);
+}
+
+.accueil_minibio_text h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.accueil_minibio_text p {
+    font-size: 30px;
+    font-weight: 300;
+    color: rgb(121, 121, 121);
+}
+
+/* --- */
+
+.accueil_motsdefile {
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+.accueil_motsdefile_mots {
+    overflow: hidden;
+}
+
+.accueil_motsdefile_mots span {
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    color: #0e6ffc;
+    animation: motsdefile 6s infinite;
+}
+
+@keyframes motsdefile {
+    25% {
+        transform: translateY(-83%);
+    }
+
+    50% {
+        transform: translateY(-183%);
+    }
+
+    75% {
+        transform: translateY(-283%);
+    }
+
+    100% {
+        transform: translateY(-383%);
+    }
+}
+
+/* --- */
+
+.accueil_fond {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: -1;
+    margin-top: -400px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Presentation */
+
+
+.presentation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 216px;
+}
+
+.presentation_bio {
+    color: rgb(241, 241, 241);
+    margin-left: 70px;
+    width: 50%;
+}
+
+.presentation_bio h1 {
+    font-size: 60px;
+}
+
+.presentation_bio p {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.presentation_bio button {
+    cursor: pointer;
+    margin-top: 50px;
+    height: 80px;
+    width: 200px;
+    background-color: rgb(32, 15, 147);
+    border-radius: 10px;
+    color: rgb(241, 241, 241);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Compétences */
+
+.competences {
+    margin-top: 200px;
+}
+
+.competences_carres {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cestcarre {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+    height: 400px;
+    width: 400px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 20px;
+}
+
+.cestcarre h2 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.cestcarre p {
+    width: 350px;
+    font-size: 20px;
+    margin: 0 auto;
+    font-weight: 200;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Formations */
+
+.formations {
+    margin-top: 250px;
+}
+
+.formations img {
+    margin-top: 100px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Mes projets */
+
+/* Critères */
+
+.projets {
+    margin-top: 250px;
+}
+
+
+.projets_categories ul {
+    margin-top: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.projets_categories ul li {
+    list-style: none;
+    padding: 20px 20px 20px 20px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.projets_categories_active {
+    background-color: rgb(32, 15, 147);
+}
+
+
+/* Mes projets */
+
+.projets_mesprojets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.projets_mesprojets_carre {
+    height: 350px;
+    width: 400px;
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 25px;
+    background-color: rgb(41, 41, 41);
+}
+
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Contact */
+
+.contact {
+    margin-top: 250px;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.contact_form_infos {
+    /* Infos = Nom prénom et email */
+    display: flex;
+    justify-content: center;
+}
+
+.contact_form_infos input {
+    height: 65px;
+    width: 300px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.contact_form_message {
+    /* Message */
+    margin: 0 auto;
+}
+
+.contact_form_message textarea {
+    margin-top: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.contact_form_submit {
+    /* Bouton envoyer */
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.contact_form_submit input {
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 30px;
+    background-color: rgb(32, 15, 147);
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Réseaux */
+
+.reseaux {
+    margin-top: 250px;
+}
+
+.reseaux_mesreseaux {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.reseaux_mesreseaux_res {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reseaux_mesreseaux_res a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 10px;
+}
+
+
+.reseaux_formes {
+    display: flex;
+    z-index: -1;
+    justify-content: space-between;
+}
+
+.reseaux_formes img {
+    width: 20%;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Mot de la fin */
+
+.motdefin {
+    color: #fff;
+    text-align: center;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Scroll bar */
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(32, 15, 147);
+    border-radius: 20px;
+}

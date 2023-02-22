@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="shortcut icon" href="Res/accueil/logo.png">
+    <title>Portfolio - Théo Le Gourrierec</title>
+
+    <script>
+
+        let pageTitle = document.title;
+
+        window.addEventListener("blur", () => {
+            document.title = "Revenez s'il vous plaît";
+        });
+
+        window.addEventListener("focus", () => {
+            document.title = pageTitle;
+        });
+
+    </script>
+    
+</head>
+
+<body>
+
+    <section class="accueil" id="accueil">
+
+        <nav class="accueil_nav">
+
+            <div class="accueil_nav_logo">
+                <img src="Res/accueil/logo.png" alt="">
+                <h1>Théo <br>Le Gourrierec</h1>
+            </div>
+            
+
+            <div class="accueil_nav_links">
+                <ul>
+                    <li><a class="accueil_navbar_text" href="#presentation">Présentation</a></li>
+                    <li><a class="accueil_navbar_text" href="#competences">Compétences</a></li>
+                    <li><a class="accueil_navbar_text" href="#formations">Formations</a></li>
+                    <li><a class="accueil_navbar_text" href="#projets">Projets</a></li>
+                    <li><a class="accueil_navbar_text" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            
+        </nav>
+            
+
+        <div class="accueil_minibio">
+
+            <img src="Res/accueil/logo.png" alt="Logo">
+ 
+            <div class="accueil_minibio_text">
+                <h1>Théo Le Gourrierec</h1>
+                <p>Designer UI / UX</p>
+            </div>
+
+        </div>
+
+        <div class="accueil_motsdefile">
+            <p>Un designer</p>
+            <div class="accueil_motsdefile_mots">
+                <span>passionné</span>
+                <span>indépendant</span>
+                <span>motivé</span>
+                <span>polyvalent</span>
+                <span>passionné</span>
+            </div>
+        </div>
+
+        <div class="accueil_scroll">
+
+        </div>
+
+        <div class="accueil_fond">
+            <img src="Res/accueil/Montagne 1.svg" alt="Forme de fond">
+            <img src="Res/accueil/Montagne 2.svg" alt="Forme de fond">
+        </div>
+
+    </section>
+
+
+
+    <section class="presentation" id="presentation">
+
+        <img src="Res/presentation/Photos.png" alt="Photos">
+        <div class="presentation_bio">
+            <h1>Théo Le Gourrierec</h1>
+            <p>Actuellement étudiant en BUT Métiers du multimédia et de l’internet (MMI) à Lannion. <br> <br>
+                Je voudrais devenir Designer UI UX ainsi que Intégrateur web. Polyvalent, motivé et passionné sont mes 3 mots clés qui me représente personnellement. <br> <br>
+                Mon apprentissage continue et ne s’arrêtera pas !</p>
+            <button>Mon CV</button>
+        </div>
+
+    </section>
+
+
+
+
+    <section class="competences" id="competences">
+        <!-- <img class="competences_forme_droite" src="Res/competences/forme_droite.svg" alt="Forme"> -->
+        <h1 class="title">Compétences</h1>
+        <div class="soulignage"></div>
+
+        <div class="competences_carres">
+            <div class="cestcarre competences_carres_designuiux">
+                <h2>Design UI / UX</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis perspiciatis autem mollitia quae culpa expedita maxime recusandae quaerat ullam. Facilis, sit animi. Incidunt facilis voluptatem mollitia voluptatibus nostrum. Voluptatum, nihil?</p>
+            </div>
+            <div class="cestcarre competences_carres_devweb">
+                <h2>Dev web</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem explicabo similique a at vero, accusamus, omnis error provident voluptatum veniam eos nihil adipisci itaque cumque molestias quis. Placeat, officia ullam.</p>
+            </div>
+            <div class="cestcarre competences_carres_gestiondeprojet">
+                <h2>Gestion de projet</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae delectus iure eius reiciendis nam aperiam omnis nostrum vitae nihil possimus nemo, necessitatibus quis dolores saepe. Incidunt quasi repudiandae placeat? A.</p>
+            </div>
+            <div class="cestcarre competences_carres_prodaudiovisuel">
+                <h2>Prod. Audio visuel</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident corrupti doloremque sint corporis aliquid sit quasi inventore quae voluptate vitae commodi assumenda cumque nulla dolorem ab, ut quidem quia hic!</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="formations" id="formations">
+        <h1 class="title">Formations</h1>
+        <div class="soulignage"></div>
+        <img src="Res/formations/progressbar.svg" alt="Progression">
+    </section>
+
+
+
+
+
+    <section class="projets" id="projets">
+        <h1 class="title">Mes projets</h1>
+        <div class="soulignage"></div>
+
+        <nav class="projets_categories">
+            <ul>
+                <li data-filter="*" class="projets_categories_active projets_categories_tous projets_categories_carre">Tous</li>
+                <li data-filter="UI / UX" class="projets_categories_uiux projets_categories_carre">UI / UX</li>
+                <li data-filter="Web" class="projets_categories_web projets_categories_carre">Web</li>
+                <li data-filter="Marketing" class="projets_categories_marketing projets_categories_carre">Marketing</li>
+            </ul>
+        </nav>
+
+
+
+
+            <!-- <div class="projets_categories_carre projets_categories_tous">
+                <button>Tous</button>
+            </div>
+
+            <div class="projets_categories_carre projets_categories_uiux">
+                <button>UI / UX</button>
+            </div>
+
+            <div class="projets_categories_carre projets_categories_web">
+                <button>Web</button>
+            </div>
+
+            <div class="projets_categories_carre projets_categories_marketing">
+                <button>Mark.</button>
+            </div> -->
+
+        
+
+        <div class="projets_mesprojets">
+
+            <div class="projets_mesprojets_carre projets_mesprojets_seaver"></div>
+
+            <div class="projets_mesprojets_carre projets_mesprojets_web"></div>
+
+            <div class="projets_mesprojets_carre projets_mesprojets_web1"></div>
+
+            <div class="projets_mesprojets_carre projets_mesprojets_web2"></div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="contact" id="contact">
+        <h1 class="title">Contact</h1>
+        <div class="soulignage"></div>
+
+        <form class="contact_form" action="$_GET">
+            <div class="contact_form_infos">
+                <input type="text" placeholder="Nom / Prénom...">
+                <input type="text" placeholder="Email...">
+            </div>
+            <div class="contact_form_message">
+                <textarea placeholder="Message..." name="message" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="contact_form_submit">
+                <input type="submit" placeholder="Envoyer">
+            </div>
+        </form>
+
+    </section>
+
+
+    <section class="reseaux" id="reseaux">
+        <h1 class="title">Mes réseaux</h1>
+        <div class="soulignage"></div>
+        
+        <div class="reseaux_mesreseaux">
+            <div class="reseaux_mesreseaux_res">
+                <img src="Res/reseaux/linkedin.png" alt="Logo Linkedin">
+                <a href="https://www.linkedin.com/in/th%C3%A9o-le-gourrierec-0a5244257/">LinkeDin</a>
+            </div>
+            <div class="reseaux_mesreseaux_res">
+                <img src="Res/reseaux/behance.png" alt="Logo Behance">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Behance</a>
+            </div>
+            <div class="reseaux_mesreseaux_res">
+                <img src="Res/reseaux/telegram.png" alt="Logo Telegram">
+                <a href="https://t.me/theokourant">Telegram</a>
+            </div>
+        </div>
+
+        <div class="reseaux_formes">
+            <img src="Res/reseaux/forme_g.svg" alt="Forme de fond">
+            <img src="Res/reseaux/forme_d.svg" alt="Forme de fond">
+        </div>
+       
+    </section>
+
+    <p class="motdefin">Design By Théo Le Gourrierec - 2023</p>
+
+    
+
+</body>
+</html>
